@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Us | Roof Replacement RTB</title>
+    <meta name="description"
+        content="Contact Roof Replacement RTB for premium residential roofing services, free estimates, emergency roof damage support, and professional roofing guidance." />
+
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+</head>
+
+<body>
+    <div class="site-shell">
+        <!-- Top Marquee -->
+        <div class="top-marquee">
+            <div class="top-marquee__track">
+                <span>Free Roof Estimates</span>
+                <span>Licensed & Insured</span>
+                <span>Premium Materials</span>
+                <span>Emergency Roofing Support</span>
+                <span>Residential Roofing Experts</span>
+                <span>Free Roof Estimates</span>
+                <span>Licensed & Insured</span>
+                <span>Premium Materials</span>
+                <span>Emergency Roofing Support</span>
+                <span>Residential Roofing Experts</span>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="header" id="siteHeader">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="index.html" class="logo" aria-label="Roof Replacement RTB home">
+                        <span class="logo__mark">RTB</span>
+                        <span class="logo__text">
+                            <strong>Roof Replacement</strong>
+                            <small>Premium Roofing Solutions</small>
+                        </span>
+                    </a>
+
+                    <nav class="nav nav--desktop" aria-label="Main navigation">
+                        <a href="index.html" class="nav__link">Home</a>
+                        <a href="about.html" class="nav__link">About</a>
+                        <a href="services.html" class="nav__link">Services</a>
+                        <a href="contact.html" class="nav__link is-active">Contact</a>
+                    </nav>
+
+                    <div class="header__actions">
+                        <a href="tel:+12125550198" class="header__phone">
+                            <i data-lucide="phone"></i>
+                            <span>(212) 555-0198</span>
+                        </a>
+
+                        <button type="button" class="search-toggle" id="searchToggle" aria-label="Open site search">
+                            <i data-lucide="search"></i>
+                        </button>
+
+                        <a href="contact.html" class="btn btn--gold header__cta">Request Estimate</a>
+
+                        <button type="button" class="burger" id="burgerButton" aria-label="Open mobile menu"
+                            aria-expanded="false" aria-controls="mobileMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Panel -->
+            <div class="search-panel" id="searchPanel">
+                <div class="container">
+                    <div class="search-panel__inner">
+                        <form class="site-search" id="siteSearchForm">
+                            <div class="site-search__field">
+                                <i data-lucide="search"></i>
+                                <input type="text" id="siteSearchInput"
+                                    placeholder="Search services, pages, or roofing topics..."
+                                    aria-label="Search the site" />
+                                <button type="submit" class="btn btn--gold btn--sm">Search</button>
+                            </div>
+
+                            <div class="site-search__quick-links" id="searchResults">
+                                <a href="roof-assessment.html" class="chip">Roof Assessment</a>
+                                <a href="roof-installation.html" class="chip">Roof Installation</a>
+                                <a href="roof-restoration.html" class="chip">Roof Restoration</a>
+                                <a href="full-roof-replacement.html" class="chip">Full Roof Replacement</a>
+                                <a href="emergency-roof-damage.html" class="chip">Emergency Roof Damage</a>
+                                <a href="about.html" class="chip">About RTB</a>
+                                <a href="contact.html" class="chip">Contact</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu__top">
+                    <a href="index.html" class="logo" aria-label="Roof Replacement RTB home">
+                        <span class="logo__mark">RTB</span>
+                        <span class="logo__text">
+                            <strong>Roof Replacement</strong>
+                            <small>Premium Roofing Solutions</small>
+                        </span>
+                    </a>
+
+                    <button type="button" class="mobile-menu__close" id="mobileMenuClose"
+                        aria-label="Close mobile menu">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+
+                <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+                    <a href="index.html" class="mobile-menu__link">Home</a>
+                    <a href="about.html" class="mobile-menu__link">About</a>
+                    <a href="services.html" class="mobile-menu__link">Services</a>
+                    <a href="contact.html" class="mobile-menu__link is-active">Contact</a>
+                </nav>
+
+                <div class="mobile-menu__contact">
+                    <div class="mobile-contact-card">
+                        <i data-lucide="phone-call"></i>
+                        <div>
+                            <span>Call us</span>
+                            <a href="tel:+12125550198">(212) 555-0198</a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-contact-card">
+                        <i data-lucide="mail"></i>
+                        <div>
+                            <span>Email</span>
+                            <a href="mailto:info@roofreplacementrtb.com">info@roofreplacementrtb.com</a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-contact-card">
+                        <i data-lucide="map-pin"></i>
+                        <div>
+                            <span>Office</span>
+                            <p>1450 Broadway, New York, NY 10018</p>
+                        </div>
+                    </div>
+
+                    <a href="#contactForm" class="btn btn--gold btn--full">Book Free Estimate</a>
+                </div>
+            </div>
+            <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+        </header>
+
+        <main>
+            <!-- Contact Hero -->
+            <section class="contact-hero">
+                <div class="container">
+                    <div class="contact-hero__grid">
+                        <div class="contact-hero__content" data-aos="fade-up" data-aos-delay="50">
+                            <span class="section-heading__eyebrow">
+                                <i data-lucide="message-square-more"></i>
+                                Contact RTB
+                            </span>
+
+                            <h1 class="contact-hero__title">
+                                Let’s talk about your
+                                <span>roofing project</span>
+                            </h1>
+
+                            <p class="contact-hero__text">
+                                Whether you need a roof assessment, emergency support, restoration,
+                                or a full replacement, our team is ready to help you take the next step with confidence.
+                            </p>
+
+                            <div class="contact-hero__actions">
+                                <a href="tel:+12125550198" class="btn btn--gold">Call Now</a>
+                                <a href="#contactFormSection" class="btn btn--ghost">Request Estimate</a>
+                            </div>
+
+                            <div class="contact-hero__badges">
+                                <div class="contact-badge">
+                                    <i data-lucide="shield-check"></i>
+                                    <span>Licensed & Insured</span>
+                                </div>
+                                <div class="contact-badge">
+                                    <i data-lucide="clock-3"></i>
+                                    <span>Fast Response</span>
+                                </div>
+                                <div class="contact-badge">
+                                    <i data-lucide="star"></i>
+                                    <span>Premium Service Standard</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-hero__panel card" data-aos="fade-left" data-aos-delay="150">
+                            <span class="mini-label">Direct Contact</span>
+                            <h2>Reach us through the channel that works best for you.</h2>
+
+                            <div class="contact-hero__panel-list">
+                                <a href="tel:+12125550198" class="contact-direct-card">
+                                    <i data-lucide="phone"></i>
+                                    <div>
+                                        <span>Phone</span>
+                                        <strong>(212) 555-0198</strong>
+                                    </div>
+                                </a>
+
+                                <a href="mailto:info@roofreplacementrtb.com" class="contact-direct-card">
+                                    <i data-lucide="mail"></i>
+                                    <div>
+                                        <span>Email</span>
+                                        <strong>info@roofreplacementrtb.com</strong>
+                                    </div>
+                                </a>
+
+                                <div class="contact-direct-card">
+                                    <i data-lucide="map-pin"></i>
+                                    <div>
+                                        <span>Office</span>
+                                        <strong>1450 Broadway, New York, NY 10018</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Cards -->
+            <section class="section">
+                <div class="container">
+                    <div class="contact-cards-grid">
+                        <article class="contact-info-card card" data-aos="fade-up" data-aos-delay="50">
+                            <div class="contact-info-card__icon">
+                                <i data-lucide="phone-call"></i>
+                            </div>
+                            <h3>Call Our Team</h3>
+                            <p>Speak directly with us about your roof condition, project scope, or urgent concerns.</p>
+                            <a href="tel:+12125550198" class="text-link">
+                                (212) 555-0198
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </article>
+
+                        <article class="contact-info-card card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="contact-info-card__icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <h3>Email Us</h3>
+                            <p>Send us your questions, service request, or property details for a quick follow-up.</p>
+                            <a href="mailto:info@roofreplacementrtb.com" class="text-link">
+                                info@roofreplacementrtb.com
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </article>
+
+                        <article class="contact-info-card card" data-aos="fade-up" data-aos-delay="150">
+                            <div class="contact-info-card__icon">
+                                <i data-lucide="map-pinned"></i>
+                            </div>
+                            <h3>Visit Our Office</h3>
+                            <p>Meet with our team and discuss roofing options, timelines, and next steps in person.</p>
+                            <span class="contact-info-card__static">1450 Broadway, New York, NY 10018</span>
+                        </article>
+
+                        <article class="contact-info-card card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="contact-info-card__icon">
+                                <i data-lucide="triangle-alert"></i>
+                            </div>
+                            <h3>Emergency Support</h3>
+                            <p>Need urgent help after storm damage or a sudden leak? Contact us right away for guidance.
+                            </p>
+                            <a href="tel:+12125550198" class="text-link">
+                                Get urgent assistance
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Form + Details -->
+            <section class="section section--alt" id="contactFormSection">
+                <div class="container">
+                    <div class="contact-main-grid">
+                        <div class="contact-main-form card" data-aos="fade-up" data-aos-delay="50">
+                            <span class="section-heading__eyebrow">Request an Estimate</span>
+                            <h2 class="section-heading__title section-heading__title--left">Tell us about your roofing
+                                needs</h2>
+                            <p class="contact-main-form__text">
+                                Fill out the form below and our team will follow up with the best next step for your
+                                project.
+                            </p>
+
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-grid">
+                                    <div class="form-field">
+                                        <label for="name">Full Name</label>
+                                        <input type="text" id="name" name="name" placeholder="Your full name" />
+                                    </div>
+
+                                    <div class="form-field">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" />
+                                    </div>
+
+                                    <div class="form-field">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" id="email" name="email" placeholder="you@example.com" />
+                                    </div>
+
+                                    <div class="form-field">
+                                        <label for="service">Service Needed</label>
+                                        <select id="service" name="service">
+                                            <option value="">Select a service</option>
+                                            <option>Roof Assessment</option>
+                                            <option>Roof Installation</option>
+                                            <option>Roof Restoration</option>
+                                            <option>Full Roof Replacement</option>
+                                            <option>Emergency Roof Damage</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="message">Project Details</label>
+                                    <textarea id="message" name="message" rows="6"
+                                        placeholder="Tell us about your roof condition, concerns, timeline, or any visible damage..."></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn--gold btn--full">Submit Request</button>
+                            </form>
+                        </div>
+
+                        <div class="contact-main-side" data-aos="fade-up" data-aos-delay="150">
+                            <div class="office-hours-card card">
+                                <span class="section-heading__eyebrow">Office Hours</span>
+                                <h3>When our team is available</h3>
+
+                                <div class="office-hours-list">
+                                    <div class="office-hours-row">
+                                        <span>Monday – Friday</span>
+                                        <strong>8:00 AM – 6:00 PM</strong>
+                                    </div>
+                                    <div class="office-hours-row">
+                                        <span>Saturday</span>
+                                        <strong>9:00 AM – 2:00 PM</strong>
+                                    </div>
+                                    <div class="office-hours-row">
+                                        <span>Sunday</span>
+                                        <strong>Closed</strong>
+                                    </div>
+                                </div>
+
+                                <p class="office-hours-note">
+                                    Emergency inquiries may be handled outside regular office hours.
+                                </p>
+                            </div>
+
+                            <div class="contact-help-card card">
+                                <span class="section-heading__eyebrow">Need Help Fast?</span>
+                                <h3>What to prepare before contacting us</h3>
+
+                                <ul class="contact-help-list">
+                                    <li><i data-lucide="check-circle-2"></i> Your address or service location</li>
+                                    <li><i data-lucide="check-circle-2"></i> A short description of the roofing issue
+                                    </li>
+                                    <li><i data-lucide="check-circle-2"></i> Whether the issue is urgent or active</li>
+                                    <li><i data-lucide="check-circle-2"></i> Photos, if available</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Map -->
+            <section class="section">
+                <div class="container">
+                    <div class="contact-map-wrap card" data-aos="fade-up">
+                        <div class="contact-map-wrap__top">
+                            <div>
+                                <span class="section-heading__eyebrow">Location</span>
+                                <h2 class="section-heading__title section-heading__title--left">Visit our office or
+                                    reach out remotely</h2>
+                            </div>
+
+                            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+                                class="btn btn--ghost btn--sm">
+                                Open Map
+                            </a>
+                        </div>
+
+                        <div class="contact-map-wrap__info">
+                            <div class="contact-map-mini">
+                                <i data-lucide="map-pin"></i>
+                                <span>1450 Broadway, New York, NY 10018</span>
+                            </div>
+                            <div class="contact-map-mini">
+                                <i data-lucide="phone"></i>
+                                <a href="tel:+12125550198">(212) 555-0198</a>
+                            </div>
+                            <div class="contact-map-mini">
+                                <i data-lucide="mail"></i>
+                                <a href="mailto:info@roofreplacementrtb.com">info@roofreplacementrtb.com</a>
+                            </div>
+                        </div>
+
+                        <div id="map" class="map-box contact-map-box" aria-label="Map with office location"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ / Contact help -->
+            <section class="section section--alt">
+                <div class="container">
+                    <div class="section-heading" data-aos="fade-up">
+                        <span class="section-heading__eyebrow">Before You Reach Out</span>
+                        <h2 class="section-heading__title">Helpful answers before booking your estimate</h2>
+                    </div>
+
+                    <div class="faq-list" id="faqList">
+                        <article class="faq-item card" data-aos="fade-up" data-aos-delay="50">
+                            <button class="faq-question" type="button">
+                                <span>Can I request a quote without committing to the service?</span>
+                                <i data-lucide="plus"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    Yes. You can contact us for a quote or estimate request so you understand
+                                    the likely service path before making any decision.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="faq-item card" data-aos="fade-up" data-aos-delay="100">
+                            <button class="faq-question" type="button">
+                                <span>What if I have emergency roof damage?</span>
+                                <i data-lucide="plus"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    If you are dealing with an urgent issue like storm damage or an active leak,
+                                    call us as soon as possible so we can guide you on immediate next steps.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="faq-item card" data-aos="fade-up" data-aos-delay="150">
+                            <button class="faq-question" type="button">
+                                <span>What information should I include in the form?</span>
+                                <i data-lucide="plus"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    The most helpful details are your contact information, service needs,
+                                    property location, visible roof condition, and whether the issue is urgent.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="section">
+                <div class="container">
+                    <div class="contact-cta card" data-aos="fade-up">
+                        <div class="contact-cta__content">
+                            <span class="section-heading__eyebrow">Start the Conversation</span>
+                            <h2>Premium roofing support starts with one message or call.</h2>
+                            <p>
+                                Reach out today and let’s find the right solution for your property,
+                                timeline, and roofing priorities.
+                            </p>
+                        </div>
+
+                        <div class="contact-cta__actions">
+                            <a href="tel:+12125550198" class="btn btn--gold">Call Now</a>
+                            <a href="services.html" class="btn btn--ghost">View Services</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__grid">
+                    <div class="footer__brand">
+                        <a href="index.html" class="logo logo--footer" aria-label="Roof Replacement RTB home">
+                            <span class="logo__mark">RTB</span>
+                            <span class="logo__text">
+                                <strong>Roof Replacement</strong>
+                                <small>Premium Roofing Solutions</small>
+                            </span>
+                        </a>
+
+                        <p>
+                            Premium residential roofing services focused on quality, efficiency,
+                            and long-term value.
+                        </p>
+                    </div>
+
+                    <div class="footer__links">
+                        <h4>Navigation</h4>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+
+                    <div class="footer__links">
+                        <h4>Services</h4>
+                        <a href="roof-assessment.html">Roof Assessment</a>
+                        <a href="roof-installation.html">Roof Installation</a>
+                        <a href="roof-restoration.html">Roof Restoration</a>
+                        <a href="full-roof-replacement.html">Full Roof Replacement</a>
+                        <a href="emergency-roof-damage.html">Emergency Roof Damage</a>
+                    </div>
+
+                    <div class="footer__links">
+                        <h4>Legal</h4>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                        <a href="cookie-policy.html">Cookie Policy</a>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <p>© <span id="currentYear">2026</span> Roof Replacement RTB. All rights reserved.</p>
+                    <p>Designed for premium roofing presentation.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Floating Call Button -->
+        <a href="tel:+12125550198" class="floating-call" aria-label="Call Roof Replacement RTB">
+            <i data-lucide="phone"></i>
+        </a>
+    </div>
+
+    <!-- Libraries -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

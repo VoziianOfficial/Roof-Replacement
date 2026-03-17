@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Roofing Services | Roof Replacement RTB</title>
+    <meta name="description"
+        content="Explore premium residential roofing services from Roof Replacement RTB, including roof assessment, installation, restoration, replacement, and emergency roof damage support." />
+
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/services.css" />
+</head>
+
+<body>
+    <div class="site-shell">
+        <!-- Top Marquee -->
+        <div class="top-marquee">
+            <div class="top-marquee__track">
+                <span>Free Roof Estimates</span>
+                <span>Licensed & Insured</span>
+                <span>Premium Materials</span>
+                <span>Emergency Roofing Support</span>
+                <span>Residential Roofing Experts</span>
+                <span>Free Roof Estimates</span>
+                <span>Licensed & Insured</span>
+                <span>Premium Materials</span>
+                <span>Emergency Roofing Support</span>
+                <span>Residential Roofing Experts</span>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="header" id="siteHeader">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="index.html" class="logo" aria-label="Roof Replacement RTB home">
+                        <span class="logo__mark">RTB</span>
+                        <span class="logo__text">
+                            <strong>Roof Replacement</strong>
+                            <small>Premium Roofing Solutions</small>
+                        </span>
+                    </a>
+
+                    <nav class="nav nav--desktop" aria-label="Main navigation">
+                        <a href="index.html" class="nav__link">Home</a>
+                        <a href="about.html" class="nav__link">About</a>
+                        <a href="services.html" class="nav__link is-active">Services</a>
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </nav>
+
+                    <div class="header__actions">
+                        <a href="tel:+12125550198" class="header__phone">
+                            <i data-lucide="phone"></i>
+                            <span>(212) 555-0198</span>
+                        </a>
+
+                        <button type="button" class="search-toggle" id="searchToggle" aria-label="Open site search">
+                            <i data-lucide="search"></i>
+                        </button>
+
+                        <a href="contact.html" class="btn btn--gold header__cta">Request Estimate</a>
+
+                        <button type="button" class="burger" id="burgerButton" aria-label="Open mobile menu"
+                            aria-expanded="false" aria-controls="mobileMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Panel -->
+            <div class="search-panel" id="searchPanel">
+                <div class="container">
+                    <div class="search-panel__inner">
+                        <form class="site-search" id="siteSearchForm">
+                            <div class="site-search__field">
+                                <i data-lucide="search"></i>
+                                <input type="text" id="siteSearchInput"
+                                    placeholder="Search services, pages, or roofing topics..."
+                                    aria-label="Search the site" />
+                                <button type="submit" class="btn btn--gold btn--sm">Search</button>
+                            </div>
+
+                            <div class="site-search__quick-links" id="searchResults">
+                                <a href="roof-assessment.html" class="chip">Roof Assessment</a>
+                                <a href="roof-installation.html" class="chip">Roof Installation</a>
+                                <a href="roof-restoration.html" class="chip">Roof Restoration</a>
+                                <a href="full-roof-replacement.html" class="chip">Full Roof Replacement</a>
+                                <a href="emergency-roof-damage.html" class="chip">Emergency Roof Damage</a>
+                                <a href="about.html" class="chip">About RTB</a>
+                                <a href="contact.html" class="chip">Contact</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu__top">
+                    <a href="index.html" class="logo" aria-label="Roof Replacement RTB home">
+                        <span class="logo__mark">RTB</span>
+                        <span class="logo__text">
+                            <strong>Roof Replacement</strong>
+                            <small>Premium Roofing Solutions</small>
+                        </span>
+                    </a>
+
+                    <button type="button" class="mobile-menu__close" id="mobileMenuClose"
+                        aria-label="Close mobile menu">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+
+                <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+                    <a href="index.html" class="mobile-menu__link">Home</a>
+                    <a href="about.html" class="mobile-menu__link">About</a>
+                    <a href="services.html" class="mobile-menu__link is-active">Services</a>
+                    <a href="contact.html" class="mobile-menu__link">Contact</a>
+                </nav>
+
+                <div class="mobile-menu__contact">
+                    <div class="mobile-contact-card">
+                        <i data-lucide="phone-call"></i>
+                        <div>
+                            <span>Call us</span>
+                            <a href="tel:+12125550198">(212) 555-0198</a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-contact-card">
+                        <i data-lucide="mail"></i>
+                        <div>
+                            <span>Email</span>
+                            <a href="mailto:info@roofreplacementrtb.com">info@roofreplacementrtb.com</a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-contact-card">
+                        <i data-lucide="map-pin"></i>
+                        <div>
+                            <span>Office</span>
+                            <p>1450 Broadway, New York, NY 10018</p>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="btn btn--gold btn--full">Book Free Estimate</a>
+                </div>
+            </div>
+            <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+        </header>
+
+        <main>
+            <!-- Services Hero -->
+            <section class="services-hero">
+                <div class="container">
+                    <div class="services-hero__grid">
+                        <div class="services-hero__content" data-aos="fade-up" data-aos-delay="50">
+                            <span class="section-heading__eyebrow">
+                                <i data-lucide="layers-3"></i>
+                                Our Services
+                            </span>
+
+                            <h1 class="services-hero__title">
+                                Premium roofing services for
+                                <span>protection, performance, and curb appeal</span>
+                            </h1>
+
+                            <p class="services-hero__text">
+                                Roof Replacement RTB offers a full range of residential roofing solutions,
+                                from inspections and restoration to complete replacement and emergency response.
+                            </p>
+
+                            <div class="services-hero__actions">
+                                <a href="contact.html" class="btn btn--gold">Request Free Estimate</a>
+                                <a href="#servicesGrid" class="btn btn--ghost">Browse Services</a>
+                            </div>
+                        </div>
+
+                        <div class="services-hero__panel card" data-aos="fade-left" data-aos-delay="150">
+                            <span class="mini-label">What We Deliver</span>
+                            <h2>Structured service, premium execution, and roofing that lasts.</h2>
+
+                            <div class="services-hero__points">
+                                <div class="services-point">
+                                    <i data-lucide="shield-check"></i>
+                                    <span>Dependable assessments and recommendations</span>
+                                </div>
+                                <div class="services-point">
+                                    <i data-lucide="badge-check"></i>
+                                    <span>Detail-oriented residential roofing solutions</span>
+                                </div>
+                                <div class="services-point">
+                                    <i data-lucide="clock-3"></i>
+                                    <span>Responsive scheduling and organized workflow</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Grid -->
+            <section class="section" id="servicesGrid">
+                <div class="container">
+                    <div class="section-heading" data-aos="fade-up">
+                        <span class="section-heading__eyebrow">Core Services</span>
+                        <h2 class="section-heading__title">Complete residential roofing support under one refined
+                            standard</h2>
+                        <p class="section-heading__text">
+                            Each service is designed to help homeowners make confident roofing decisions,
+                            whether they need a quick assessment or a full replacement project.
+                        </p>
+                    </div>
+
+                    <div class="services-page-grid">
+                        <article class="services-page-card card" data-aos="fade-up" data-aos-delay="50">
+                            <div class="services-page-card__icon">
+                                <i data-lucide="search-check"></i>
+                            </div>
+                            <h3>Roof Assessment</h3>
+                            <p>
+                                Comprehensive evaluations that help identify aging materials, storm damage,
+                                structural concerns, and early warning signs before they become larger issues.
+                            </p>
+                            <ul class="services-page-card__list">
+                                <li><i data-lucide="check"></i> Condition review</li>
+                                <li><i data-lucide="check"></i> Damage visibility check</li>
+                                <li><i data-lucide="check"></i> Next-step recommendations</li>
+                            </ul>
+                            <a href="roof-assessment.html" class="text-link">
+                                Learn more
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </article>
+
+                        <article class="services-page-card card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="services-page-card__icon">
+                                <i data-lucide="hammer"></i>
+                            </div>
+                            <h3>Roof Installation</h3>
+                            <p>
+                                New roofing system installation for residential properties using durable,
+                                premium-grade materials selected for both performance and visual appeal.
+                            </p>
+                            <ul class="services-page-card__list">
+                                <li><i data-lucide="check"></i> New roof systems</li>
+                                <li><i data-lucide="check"></i> Material guidance</li>
+                                <li><i data-lucide="check"></i> Clean project delivery</li>
+                            </ul>
+                            <a href="roof-installation.html" class="text-link">
+                                Learn more
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </article>
+
+                        <article class="services-page-card card" data-aos="fade-up" data-aos-delay="150">
+                            <div class="services-page-card__icon">
+                                <i data-lucide="wrench"></i>
+                            </div>
+                            <h3>Roof Restoration</h3>
+                            <p>
+                                Restoration and repair services for homeowners who want to resolve leaks,
+                                visible wear, or damage while extending roof lifespan where possible.
+                            </p>
+                            <ul class="services-page-card__list">
+                                <li><i data-lucide="check"></i> Leak-focused repairs</li>
+                                <li><i data-lucide="check"></i> Wear correction</li>
+                                <li><i data-lucide="check"></i> Performance improvement</li>
+                            </ul>
+                            <a href="roof-restoration.html" class="text-link">
+                                Learn more
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </article>
+
+                        <article class="services-page-card card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="services-page-card__icon">
+                                <i data-lucide="home"></i>
+                            </div>
+                            <h3>Full Roof Replacement</h3>
+                            <p>
+                                Complete roof replacement for aging or compromised systems where long-term
+                                value, fresh protection, and better curb appeal are the priority.
+                            </p>
+                            <ul class="services-page-card__list">
+                                <li><i data-lucide="check"></i> Full system renewal</li>
+                                <li><i data-lucide="check"></i> Premium finish quality</li>
+                                <li><i data-lucide="check"></i> Long-term solution</li>
+                            </ul>
+                            <a href="full-roof-replacement.html" class="text-link">
+                                Learn more
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </article>
+
+                        <article class="services-page-card card" data-aos="fade-up" data-aos-delay="250">
+                            <div class="services-page-card__icon">
+                                <i data-lucide="cloud-lightning"></i>
+                            </div>
+                            <h3>Emergency Roof Damage</h3>
+                            <p>
+                                Fast-response support for urgent storm damage, sudden leaks, and roofing issues
+                                that need immediate attention to protect the property.
+                            </p>
+                            <ul class="services-page-card__list">
+                                <li><i data-lucide="check"></i> Storm response</li>
+                                <li><i data-lucide="check"></i> Urgent leak support</li>
+                                <li><i data-lucide="check"></i> Damage stabilization</li>
+                            </ul>
+                            <a href="emergency-roof-damage.html" class="text-link">
+                                Learn more
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Services Matter -->
+            <section class="section section--alt">
+                <div class="container">
+                    <div class="section-heading" data-aos="fade-up">
+                        <span class="section-heading__eyebrow">Why It Matters</span>
+                        <h2 class="section-heading__title">The right roofing service protects more than just the
+                            structure</h2>
+                    </div>
+
+                    <div class="service-benefits-grid">
+                        <article class="service-benefit card" data-aos="fade-up" data-aos-delay="50">
+                            <i data-lucide="shield"></i>
+                            <h3>Property Protection</h3>
+                            <p>
+                                Quality roofing reduces the risk of moisture intrusion, structural wear,
+                                and costly future repairs.
+                            </p>
+                        </article>
+
+                        <article class="service-benefit card" data-aos="fade-up" data-aos-delay="100">
+                            <i data-lucide="sparkles"></i>
+                            <h3>Exterior Appearance</h3>
+                            <p>
+                                A well-executed roofing project can significantly improve the visual finish
+                                and overall impression of a home.
+                            </p>
+                        </article>
+
+                        <article class="service-benefit card" data-aos="fade-up" data-aos-delay="150">
+                            <i data-lucide="badge-dollar-sign"></i>
+                            <h3>Long-Term Value</h3>
+                            <p>
+                                Durable materials and the right service path help preserve homeowner investment
+                                over time.
+                            </p>
+                        </article>
+
+                        <article class="service-benefit card" data-aos="fade-up" data-aos-delay="200">
+                            <i data-lucide="clock-3"></i>
+                            <h3>Peace of Mind</h3>
+                            <p>
+                                When roofing is handled properly, homeowners gain confidence in safety,
+                                protection, and reliability.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Process -->
+            <section class="section">
+                <div class="container">
+                    <div class="section-heading" data-aos="fade-up">
+                        <span class="section-heading__eyebrow">Our Process</span>
+                        <h2 class="section-heading__title">A simple, organized approach for every roofing service</h2>
+                    </div>
+
+                    <div class="services-process-grid">
+                        <article class="services-process-card card" data-aos="fade-up" data-aos-delay="50">
+                            <div class="services-process-card__number">01</div>
+                            <h3>Consultation</h3>
+                            <p>We discuss your current concerns, roofing goals, and property needs.</p>
+                        </article>
+
+                        <article class="services-process-card card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="services-process-card__number">02</div>
+                            <h3>Evaluation</h3>
+                            <p>Our team determines the condition of the roof and the most practical service path.</p>
+                        </article>
+
+                        <article class="services-process-card card" data-aos="fade-up" data-aos-delay="150">
+                            <div class="services-process-card__number">03</div>
+                            <h3>Recommendation</h3>
+                            <p>We outline next steps, explain the service scope, and align on the right solution.</p>
+                        </article>
+
+                        <article class="services-process-card card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="services-process-card__number">04</div>
+                            <h3>Execution</h3>
+                            <p>The work is completed with a premium standard of organization, care, and finish quality.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose RTB -->
+            <section class="section section--alt">
+                <div class="container">
+                    <div class="services-trust card" data-aos="fade-up">
+                        <div class="services-trust__content">
+                            <span class="section-heading__eyebrow">Why Choose RTB</span>
+                            <h2>We deliver more than a service — we deliver confidence in the process.</h2>
+                            <p>
+                                From assessments to full replacement, our goal is to make roofing feel clear,
+                                responsive, and professionally managed for every homeowner we work with.
+                            </p>
+                        </div>
+
+                        <div class="services-trust__grid">
+                            <div class="services-trust__item">
+                                <i data-lucide="clipboard-check"></i>
+                                <span>Clear recommendations and structured service flow</span>
+                            </div>
+                            <div class="services-trust__item">
+                                <i data-lucide="shield-check"></i>
+                                <span>Premium standards for materials and workmanship</span>
+                            </div>
+                            <div class="services-trust__item">
+                                <i data-lucide="message-square"></i>
+                                <span>Responsive communication throughout the project</span>
+                            </div>
+                            <div class="services-trust__item">
+                                <i data-lucide="star"></i>
+                                <span>High-touch experience for residential clients</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="section">
+                <div class="container">
+                    <div class="services-cta card" data-aos="fade-up">
+                        <div class="services-cta__content">
+                            <span class="section-heading__eyebrow">Let’s Get Started</span>
+                            <h2>Need help choosing the right roofing service?</h2>
+                            <p>
+                                Reach out today and we’ll help you understand the best next step for your
+                                property, roof condition, and project goals.
+                            </p>
+                        </div>
+
+                        <div class="services-cta__actions">
+                            <a href="contact.html" class="btn btn--gold">Request Free Estimate</a>
+                            <a href="about.html" class="btn btn--ghost">About Our Company</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__grid">
+                    <div class="footer__brand">
+                        <a href="index.html" class="logo logo--footer" aria-label="Roof Replacement RTB home">
+                            <span class="logo__mark">RTB</span>
+                            <span class="logo__text">
+                                <strong>Roof Replacement</strong>
+                                <small>Premium Roofing Solutions</small>
+                            </span>
+                        </a>
+
+                        <p>
+                            Premium residential roofing services focused on quality, efficiency,
+                            and long-term value.
+                        </p>
+                    </div>
+
+                    <div class="footer__links">
+                        <h4>Navigation</h4>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+
+                    <div class="footer__links">
+                        <h4>Services</h4>
+                        <a href="roof-assessment.html">Roof Assessment</a>
+                        <a href="roof-installation.html">Roof Installation</a>
+                        <a href="roof-restoration.html">Roof Restoration</a>
+                        <a href="full-roof-replacement.html">Full Roof Replacement</a>
+                        <a href="emergency-roof-damage.html">Emergency Roof Damage</a>
+                    </div>
+
+                    <div class="footer__links">
+                        <h4>Legal</h4>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                        <a href="cookie-policy.html">Cookie Policy</a>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <p>© <span id="currentYear">2026</span> Roof Replacement RTB. All rights reserved.</p>
+                    <p>Designed for premium roofing presentation.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Floating Call Button -->
+        <a href="tel:+12125550198" class="floating-call" aria-label="Call Roof Replacement RTB">
+            <i data-lucide="phone"></i>
+        </a>
+    </div>
+
+    <!-- Libraries -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

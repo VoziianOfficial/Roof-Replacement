@@ -1,0 +1,10 @@
+/* =========================
+   ROOF RESTORATION PAGE
+========================= */
+
+@import url("./full-roof-replacement.css");
+
+/* Немного мягче стиль */
+.service-hero__title span {
+    color: rgba(198, 166, 106, 0.85);
+}

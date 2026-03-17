@@ -1,0 +1,344 @@
+/* =========================
+   FULL ROOF REPLACEMENT PAGE
+========================= */
+
+/* HERO */
+
+.service-hero {
+    position: relative;
+    padding: 90px 0 60px;
+}
+
+.service-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 20% 10%, rgba(198, 166, 106, 0.12), transparent 30%),
+        radial-gradient(circle at 80% 0%, rgba(255, 255, 255, 0.05), transparent 20%);
+    pointer-events: none;
+}
+
+.service-hero__grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 28px;
+}
+
+.service-hero__title {
+    margin: 20px 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(3rem, 6vw, 5.4rem);
+    line-height: 0.92;
+    letter-spacing: -0.04em;
+}
+
+.service-hero__title span {
+    display: block;
+    color: var(--gold-strong);
+}
+
+.service-hero__text {
+    max-width: 620px;
+    color: var(--text-soft);
+    margin-bottom: 28px;
+}
+
+.service-hero__actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+/* HERO PANEL */
+
+.service-hero__panel {
+    padding: 28px;
+    transition: var(--transition);
+}
+
+.service-hero__panel:hover {
+    transform: translateY(-4px);
+    border-color: var(--line-strong);
+}
+
+.service-hero__panel h2 {
+    margin: 12px 0 20px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.2rem;
+}
+
+.service-hero__points {
+    display: grid;
+    gap: 14px;
+}
+
+.service-point {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.02);
+    transition: var(--transition);
+}
+
+.service-point:hover {
+    transform: translateY(-3px);
+    border-color: var(--line-strong);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.service-point i {
+    width: 18px;
+    height: 18px;
+    color: var(--gold);
+}
+
+/* OVERVIEW */
+
+.service-overview {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 20px;
+}
+
+.service-overview__content {
+    padding: 28px;
+    transition: var(--transition);
+}
+
+.service-overview__content:hover {
+    transform: translateY(-4px);
+    border-color: var(--line-strong);
+}
+
+.service-overview__stats {
+    display: grid;
+    gap: 14px;
+}
+
+/* INFO GRID */
+
+.service-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.service-info-card {
+    padding: 24px;
+    transition: var(--transition);
+}
+
+.service-info-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--line-strong);
+}
+
+.service-info-card i {
+    width: 24px;
+    height: 24px;
+    color: var(--gold-strong);
+    margin-bottom: 16px;
+}
+
+.service-info-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-info-card p {
+    color: var(--text-soft);
+}
+
+/* BENEFITS */
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.benefit-card {
+    padding: 24px;
+    transition: var(--transition);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--line-strong);
+}
+
+.benefit-card i {
+    width: 24px;
+    height: 24px;
+    color: var(--gold-strong);
+    margin-bottom: 16px;
+}
+
+.benefit-card p {
+    color: var(--text-soft);
+}
+
+/* PROCESS */
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.process-card {
+    padding: 24px;
+    transition: var(--transition);
+}
+
+.process-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--line-strong);
+}
+
+.process-card__number {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--gold);
+    margin-bottom: 12px;
+}
+
+/* TRUST */
+
+.service-trust {
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+    transition: var(--transition);
+}
+
+.service-trust:hover {
+    transform: translateY(-4px);
+    border-color: var(--line-strong);
+}
+
+.service-trust__content h2 {
+    margin: 14px 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.6rem;
+}
+
+.service-trust__content p {
+    color: var(--text-soft);
+}
+
+.service-trust__grid {
+    display: grid;
+    gap: 12px;
+}
+
+.service-trust__item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 14px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.03);
+    transition: var(--transition);
+}
+
+.service-trust__item:hover {
+    transform: translateY(-2px);
+    border-color: var(--line-strong);
+}
+
+.service-trust__item i {
+    width: 18px;
+    height: 18px;
+    color: var(--gold);
+}
+
+/* CTA */
+
+.service-cta {
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    transition: var(--transition);
+}
+
+.service-cta:hover {
+    transform: translateY(-4px);
+    border-color: var(--line-strong);
+}
+
+.service-cta__content h2 {
+    margin: 14px 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.4rem;
+}
+
+.service-cta__content p {
+    color: var(--text-soft);
+}
+
+.service-cta__actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+
+    .service-grid-4,
+    .benefits-grid,
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .service-hero__grid,
+    .service-overview,
+    .service-trust {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-hero {
+        padding: 60px 0 40px;
+    }
+
+    .service-grid-4,
+    .benefits-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-cta {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 560px) {
+    .service-hero__title {
+        font-size: clamp(2.4rem, 10vw, 3.6rem);
+    }
+
+    .service-hero__panel,
+    .service-overview__content,
+    .service-info-card,
+    .benefit-card,
+    .process-card,
+    .service-trust,
+    .service-cta {
+        padding: 20px;
+    }
+}

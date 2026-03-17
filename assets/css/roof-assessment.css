@@ -1,0 +1,11 @@
+/* =========================
+   ROOF ASSESSMENT PAGE
+========================= */
+
+/* Используем базовые стили сервисов */
+@import url("./full-roof-replacement.css");
+
+/* Индивидуальные акценты (можно менять позже) */
+.service-hero__title span {
+    color: var(--gold-strong);
+}
