@@ -158,3 +158,34 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+const servicesSwiperEl = document.getElementById("servicesSwiper");
+
+if (servicesSwiperEl && window.Swiper) {
+    new Swiper("#servicesSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 18,
+        speed: 700,
+        loop: true,
+        grabCursor: true,
+        watchOverflow: true,
+        autoHeight: false,
+        pagination: {
+            el: ".services-swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".services-swiper-next",
+            prevEl: ".services-swiper-prev",
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 3,
+            },
+        },
+    });
+}
+

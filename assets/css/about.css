@@ -7,6 +7,7 @@
 .about-hero {
     position: relative;
     padding: 90px 0 60px;
+    overflow: hidden;
 }
 
 .about-hero::before {
@@ -14,9 +15,15 @@
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(circle at 20% 10%, rgba(198, 166, 106, 0.12), transparent 30%),
-        radial-gradient(circle at 80% 0%, rgba(255, 255, 255, 0.05), transparent 20%);
+        linear-gradient(90deg, rgba(8, 8, 9, 0.85), rgba(8, 8, 9, 0.6)),
+        url("../images/about/hero-main.jpg") center/cover no-repeat;
+    z-index: 0;
     pointer-events: none;
+}
+
+.about-hero>* {
+    position: relative;
+    z-index: 1;
 }
 
 .about-hero__grid {
@@ -127,8 +134,16 @@
     gap: 14px;
 }
 
-/* STORY */
 
+
+/* STORY */
+.about-story {
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.015),
+            rgba(255, 255, 255, 0.025));
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
 .story-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -203,6 +218,30 @@
 
 .value-card p {
     color: var(--text-soft);
+}
+/* VALUES BACKGROUND */
+
+.about-values {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-values::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(8, 8, 9, 0.85),
+            rgba(8, 8, 9, 0.6)),
+        url("../images/about/about-preview.jpg") center/cover no-repeat;
+    opacity: 0.22;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.about-values>* {
+    position: relative;
+    z-index: 1;
 }
 
 /* PROCESS */
@@ -321,6 +360,30 @@
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+}
+
+/* =========================
+   ABOUT CTA BACKGROUND
+========================= */
+
+.about-cta {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-cta::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(8, 8, 9, 0.85), rgba(8, 8, 9, 0.6)),
+        url("../images/about/service-replacement.jpg") center/cover no-repeat;
+    z-index: 0;
+}
+
+.about-cta>* {
+    position: relative;
+    z-index: 1;
 }
 
 /* =========================

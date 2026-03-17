@@ -20,6 +20,7 @@
 
     <!-- Libraries -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -112,60 +113,60 @@
                 </div>
             </div>
         </header>
-                <div class="mobile-menu" id="mobileMenu">
-                    <div class="mobile-menu__top">
-                        <a href="index.html" class="logo" aria-label="Roof Replacement RTB home">
-                            <span class="logo__mark">RTB</span>
-                            <span class="logo__text">
-                                <strong>Roof Replacement</strong>
-                                <small>Premium Roofing Solutions</small>
-                            </span>
-                        </a>
-                
-                        <button type="button" class="mobile-menu__close" id="mobileMenuClose" aria-label="Close mobile menu">
-                            <i data-lucide="x"></i>
-                        </button>
-                    </div>
-                
-                    <nav class="mobile-menu__nav" aria-label="Mobile navigation">
-                        <a href="index.html" class="mobile-menu__link is-active">Home</a>
-                        <a href="about.html" class="mobile-menu__link">About</a>
-                        <a href="services.html" class="mobile-menu__link">Services</a>
-                        <a href="contact.html" class="mobile-menu__link">Contact</a>
-                    </nav>
-                
-                    <div class="mobile-menu__contact">
-                        <div class="mobile-contact-card">
-                            <i data-lucide="phone-call"></i>
-                            <div>
-                                <span>Call us</span>
-                                <a href="tel:+12125550198">(212) 555-0198</a>
-                            </div>
-                        </div>
-                
-                        <div class="mobile-contact-card">
-                            <i data-lucide="mail"></i>
-                            <div>
-                                <span>Email</span>
-                                <a href="mailto:info@roofreplacementrtb.com">info@roofreplacementrtb.com</a>
-                            </div>
-                        </div>
-                
-                        <div class="mobile-contact-card">
-                            <i data-lucide="map-pin"></i>
-                            <div>
-                                <span>Office</span>
-                                <p>1450 Broadway, New York, NY 10018</p>
-                            </div>
-                        </div>
-                
-                        <a href="contact.html" class="btn btn--gold btn--full">Book Free Estimate</a>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu__top">
+                <a href="index.html" class="logo" aria-label="Roof Replacement RTB home">
+                    <span class="logo__mark">RTB</span>
+                    <span class="logo__text">
+                        <strong>Roof Replacement</strong>
+                        <small>Premium Roofing Solutions</small>
+                    </span>
+                </a>
+
+                <button type="button" class="mobile-menu__close" id="mobileMenuClose" aria-label="Close mobile menu">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+
+            <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+                <a href="index.html" class="mobile-menu__link">Home</a>
+                <a href="about.html" class="mobile-menu__link">About</a>
+                <a href="services.html" class="mobile-menu__link is-active">Services</a>
+                <a href="contact.html" class="mobile-menu__link">Contact</a>
+            </nav>
+
+            <div class="mobile-menu__contact">
+                <div class="mobile-contact-card">
+                    <i data-lucide="phone-call"></i>
+                    <div>
+                        <span>Call us</span>
+                        <a href="tel:+12125550198">(212) 555-0198</a>
                     </div>
                 </div>
-                
-                <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
-                
-                <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+
+                <div class="mobile-contact-card">
+                    <i data-lucide="mail"></i>
+                    <div>
+                        <span>Email</span>
+                        <a href="mailto:info@roofreplacementrtb.com">info@roofreplacementrtb.com</a>
+                    </div>
+                </div>
+
+                <div class="mobile-contact-card">
+                    <i data-lucide="map-pin"></i>
+                    <div>
+                        <span>Office</span>
+                        <p>1450 Broadway, New York, NY 10018</p>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="btn btn--gold btn--full">Book Free Estimate</a>
+            </div>
+        </div>
+
+        <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
 
         <main>
             <!-- Services Hero -->
@@ -190,7 +191,7 @@
 
                             <div class="services-hero__actions">
                                 <a href="contact.html" class="btn btn--gold">Request Free Estimate</a>
-                                <a href="#servicesGrid" class="btn btn--ghost">Browse Services</a>
+                                <a href="#servicesSwiper" class="btn btn--ghost">Browse Services</a>
                             </div>
                         </div>
 
@@ -217,119 +218,190 @@
                 </div>
             </section>
 
-            <!-- Services Grid -->
-            <section class="section" id="servicesGrid">
+            <!-- Services Slider -->
+            <section class="section">
                 <div class="container">
                     <div class="section-heading" data-aos="fade-up">
-                        <span class="section-heading__eyebrow">Core Services</span>
-                        <h2 class="section-heading__title">Complete residential roofing support under one refined
-                            standard</h2>
+                        <span class="section-heading__eyebrow">Service Options</span>
+                        <h2 class="section-heading__title">Explore the roofing solutions we offer</h2>
                         <p class="section-heading__text">
-                            Each service is designed to help homeowners make confident roofing decisions,
-                            whether they need a quick assessment or a full replacement project.
+                            Browse our core services and choose the roofing path that best fits your
+                            property condition, performance goals, and project priorities.
                         </p>
                     </div>
 
-                    <div class="services-page-grid">
-                        <article class="services-page-card card" data-aos="fade-up" data-aos-delay="50">
-                            <div class="services-page-card__icon">
-                                <i data-lucide="search-check"></i>
-                            </div>
-                            <h3>Roof Assessment</h3>
-                            <p>
-                                Comprehensive evaluations that help identify aging materials, storm damage,
-                                structural concerns, and early warning signs before they become larger issues.
-                            </p>
-                            <ul class="services-page-card__list">
-                                <li><i data-lucide="check"></i> Condition review</li>
-                                <li><i data-lucide="check"></i> Damage visibility check</li>
-                                <li><i data-lucide="check"></i> Next-step recommendations</li>
-                            </ul>
-                            <a href="roof-assessment.html" class="text-link">
-                                Learn more
-                                <i data-lucide="arrow-right"></i>
-                            </a>
-                        </article>
+                    <div class="swiper services-swiper" id="servicesSwiper" data-aos="fade-up" data-aos-delay="100">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <article class="services-page-card card">
+                                    <img src="assets/images/services/service-assessment.jpg"
+                                        alt="Roof assessment service" class="services-page-card__bg" />
+                                    <div class="services-page-card__overlay"></div>
 
-                        <article class="services-page-card card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="services-page-card__icon">
-                                <i data-lucide="hammer"></i>
-                            </div>
-                            <h3>Roof Installation</h3>
-                            <p>
-                                New roofing system installation for residential properties using durable,
-                                premium-grade materials selected for both performance and visual appeal.
-                            </p>
-                            <ul class="services-page-card__list">
-                                <li><i data-lucide="check"></i> New roof systems</li>
-                                <li><i data-lucide="check"></i> Material guidance</li>
-                                <li><i data-lucide="check"></i> Clean project delivery</li>
-                            </ul>
-                            <a href="roof-installation.html" class="text-link">
-                                Learn more
-                                <i data-lucide="arrow-right"></i>
-                            </a>
-                        </article>
+                                    <div class="services-page-card__content">
+                                        <div class="services-page-card__icon">
+                                            <i data-lucide="search-check"></i>
+                                        </div>
 
-                        <article class="services-page-card card" data-aos="fade-up" data-aos-delay="150">
-                            <div class="services-page-card__icon">
-                                <i data-lucide="wrench"></i>
-                            </div>
-                            <h3>Roof Restoration</h3>
-                            <p>
-                                Restoration and repair services for homeowners who want to resolve leaks,
-                                visible wear, or damage while extending roof lifespan where possible.
-                            </p>
-                            <ul class="services-page-card__list">
-                                <li><i data-lucide="check"></i> Leak-focused repairs</li>
-                                <li><i data-lucide="check"></i> Wear correction</li>
-                                <li><i data-lucide="check"></i> Performance improvement</li>
-                            </ul>
-                            <a href="roof-restoration.html" class="text-link">
-                                Learn more
-                                <i data-lucide="arrow-right"></i>
-                            </a>
-                        </article>
+                                        <h3>Roof Assessment</h3>
+                                        <p>
+                                            Comprehensive evaluations that help identify aging materials, storm damage,
+                                            structural concerns, and early warning signs before they become larger
+                                            issues.
+                                        </p>
 
-                        <article class="services-page-card card" data-aos="fade-up" data-aos-delay="200">
-                            <div class="services-page-card__icon">
-                                <i data-lucide="home"></i>
-                            </div>
-                            <h3>Full Roof Replacement</h3>
-                            <p>
-                                Complete roof replacement for aging or compromised systems where long-term
-                                value, fresh protection, and better curb appeal are the priority.
-                            </p>
-                            <ul class="services-page-card__list">
-                                <li><i data-lucide="check"></i> Full system renewal</li>
-                                <li><i data-lucide="check"></i> Premium finish quality</li>
-                                <li><i data-lucide="check"></i> Long-term solution</li>
-                            </ul>
-                            <a href="full-roof-replacement.html" class="text-link">
-                                Learn more
-                                <i data-lucide="arrow-right"></i>
-                            </a>
-                        </article>
+                                        <ul class="services-page-card__list">
+                                            <li><i data-lucide="check"></i> Condition review</li>
+                                            <li><i data-lucide="check"></i> Damage visibility check</li>
+                                            <li><i data-lucide="check"></i> Next-step recommendations</li>
+                                        </ul>
 
-                        <article class="services-page-card card" data-aos="fade-up" data-aos-delay="250">
-                            <div class="services-page-card__icon">
-                                <i data-lucide="cloud-lightning"></i>
+                                        <a href="roof-assessment.html" class="text-link">
+                                            Learn more
+                                            <i data-lucide="arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </article>
                             </div>
-                            <h3>Emergency Roof Damage</h3>
-                            <p>
-                                Fast-response support for urgent storm damage, sudden leaks, and roofing issues
-                                that need immediate attention to protect the property.
-                            </p>
-                            <ul class="services-page-card__list">
-                                <li><i data-lucide="check"></i> Storm response</li>
-                                <li><i data-lucide="check"></i> Urgent leak support</li>
-                                <li><i data-lucide="check"></i> Damage stabilization</li>
-                            </ul>
-                            <a href="emergency-roof-damage.html" class="text-link">
-                                Learn more
-                                <i data-lucide="arrow-right"></i>
-                            </a>
-                        </article>
+
+                            <div class="swiper-slide">
+                                <article class="services-page-card card">
+                                    <img src="assets/images/services/service-installation.jpg"
+                                        alt="Roof installation service" class="services-page-card__bg" />
+                                    <div class="services-page-card__overlay"></div>
+
+                                    <div class="services-page-card__content">
+                                        <div class="services-page-card__icon">
+                                            <i data-lucide="hammer"></i>
+                                        </div>
+
+                                        <h3>Roof Installation</h3>
+                                        <p>
+                                            New roofing system installation for residential properties using durable,
+                                            premium-grade materials selected for both performance and visual appeal.
+                                        </p>
+
+                                        <ul class="services-page-card__list">
+                                            <li><i data-lucide="check"></i> New roof systems</li>
+                                            <li><i data-lucide="check"></i> Material guidance</li>
+                                            <li><i data-lucide="check"></i> Clean project delivery</li>
+                                        </ul>
+
+                                        <a href="roof-installation.html" class="text-link">
+                                            Learn more
+                                            <i data-lucide="arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <article class="services-page-card card">
+                                    <img src="assets/images/services/service-restoration.jpg"
+                                        alt="Roof restoration service" class="services-page-card__bg" />
+                                    <div class="services-page-card__overlay"></div>
+
+                                    <div class="services-page-card__content">
+                                        <div class="services-page-card__icon">
+                                            <i data-lucide="wrench"></i>
+                                        </div>
+
+                                        <h3>Roof Restoration</h3>
+                                        <p>
+                                            Restoration and repair services for homeowners who want to resolve leaks,
+                                            visible wear, or damage while extending roof lifespan where possible.
+                                        </p>
+
+                                        <ul class="services-page-card__list">
+                                            <li><i data-lucide="check"></i> Leak-focused repairs</li>
+                                            <li><i data-lucide="check"></i> Wear correction</li>
+                                            <li><i data-lucide="check"></i> Performance improvement</li>
+                                        </ul>
+
+                                        <a href="roof-restoration.html" class="text-link">
+                                            Learn more
+                                            <i data-lucide="arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <article class="services-page-card card">
+                                    <img src="assets/images/services/service-replacement.jpg"
+                                        alt="Full roof replacement service" class="services-page-card__bg" />
+                                    <div class="services-page-card__overlay"></div>
+
+                                    <div class="services-page-card__content">
+                                        <div class="services-page-card__icon">
+                                            <i data-lucide="home"></i>
+                                        </div>
+
+                                        <h3>Full Roof Replacement</h3>
+                                        <p>
+                                            Complete roof replacement for aging or compromised systems where long-term
+                                            value, fresh protection, and better curb appeal are the priority.
+                                        </p>
+
+                                        <ul class="services-page-card__list">
+                                            <li><i data-lucide="check"></i> Full system renewal</li>
+                                            <li><i data-lucide="check"></i> Premium finish quality</li>
+                                            <li><i data-lucide="check"></i> Long-term solution</li>
+                                        </ul>
+
+                                        <a href="full-roof-replacement.html" class="text-link">
+                                            Learn more
+                                            <i data-lucide="arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <article class="services-page-card card">
+                                    <img src="assets/images/services/service-emergency.jpg"
+                                        alt="Emergency roof damage service" class="services-page-card__bg" />
+                                    <div class="services-page-card__overlay"></div>
+
+                                    <div class="services-page-card__content">
+                                        <div class="services-page-card__icon">
+                                            <i data-lucide="cloud-lightning"></i>
+                                        </div>
+
+                                        <h3>Emergency Roof Damage</h3>
+                                        <p>
+                                            Fast-response support for urgent storm damage, sudden leaks, and roofing
+                                            issues
+                                            that need immediate attention to protect the property.
+                                        </p>
+
+                                        <ul class="services-page-card__list">
+                                            <li><i data-lucide="check"></i> Storm response</li>
+                                            <li><i data-lucide="check"></i> Urgent leak support</li>
+                                            <li><i data-lucide="check"></i> Damage stabilization</li>
+                                        </ul>
+
+                                        <a href="emergency-roof-damage.html" class="text-link">
+                                            Learn more
+                                            <i data-lucide="arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="services-swiper__footer">
+                            <div class="swiper-pagination services-swiper-pagination"></div>
+
+                            <div class="services-swiper__nav">
+                                <button class="services-swiper-prev" type="button" aria-label="Previous service">
+                                    <i data-lucide="arrow-left"></i>
+                                </button>
+                                <button class="services-swiper-next" type="button" aria-label="Next service">
+                                    <i data-lucide="arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -537,6 +609,7 @@
     <!-- Libraries -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- JS -->
     <script src="assets/js/main.js"></script>
