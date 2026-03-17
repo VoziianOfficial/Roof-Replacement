@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const faqItems = document.querySelectorAll(".faq-item");
     const mobileMenuLinks = document.querySelectorAll(".mobile-menu__link");
 
+    const policyConsent = document.getElementById("policyConsent");
+    const policyAcceptButton = document.getElementById("policyAcceptButton");
+    const policyDeclineButton = document.getElementById("policyDeclineButton");
+
     const setHeaderState = () => {
         if (!header) return;
         if (window.scrollY > 24) {
@@ -41,6 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         searchToggle.addEventListener("click", (event) => {
             event.stopPropagation();
             const isOpen = searchPanel.classList.contains("is-open");
+
             if (isOpen) {
                 closeSearchPanel();
             } else {
@@ -53,14 +58,14 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!mobileMenu || !burgerButton) return;
         mobileMenu.classList.add("is-open");
         burgerButton.setAttribute("aria-expanded", "true");
-        document.body.style.overflow = "hidden";
+        body.style.overflow = "hidden";
     };
 
     const closeMobileMenu = () => {
         if (!mobileMenu || !burgerButton) return;
         mobileMenu.classList.remove("is-open");
         burgerButton.setAttribute("aria-expanded", "false");
-        document.body.style.overflow = "";
+        body.style.overflow = "";
     };
 
     if (burgerButton) {
@@ -105,6 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (faqItems.length) {
         faqItems.forEach((item) => {
             const question = item.querySelector(".faq-question");
+
             if (!question) return;
 
             question.addEventListener("click", () => {
@@ -157,35 +163,68 @@ document.addEventListener("DOMContentLoaded", () => {
             contactForm.reset();
         });
     }
+
+    const servicesSwiperEl = document.getElementById("servicesSwiper");
+
+    if (servicesSwiperEl && window.Swiper) {
+        new Swiper("#servicesSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 18,
+            speed: 700,
+            loop: false,
+            grabCursor: true,
+            watchOverflow: true,
+            autoHeight: false,
+            pagination: {
+                el: ".services-swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".services-swiper-next",
+                prevEl: ".services-swiper-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1200: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    }
+
+    const POLICY_KEY = "rtb_policy_choice";
+
+    const showPolicyConsent = () => {
+        if (!policyConsent) return;
+        policyConsent.classList.add("is-visible");
+        policyConsent.setAttribute("aria-hidden", "false");
+    };
+
+    const hidePolicyConsent = () => {
+        if (!policyConsent) return;
+        policyConsent.classList.remove("is-visible");
+        policyConsent.setAttribute("aria-hidden", "true");
+    };
+
+    const savedPolicyChoice = localStorage.getItem(POLICY_KEY);
+
+    if (!savedPolicyChoice) {
+        showPolicyConsent();
+    }
+
+    if (policyAcceptButton) {
+        policyAcceptButton.addEventListener("click", () => {
+            localStorage.setItem(POLICY_KEY, "accepted");
+            hidePolicyConsent();
+        });
+    }
+
+    if (policyDeclineButton) {
+        policyDeclineButton.addEventListener("click", () => {
+            localStorage.setItem(POLICY_KEY, "declined");
+            hidePolicyConsent();
+        });
+    }
 });
-
-const servicesSwiperEl = document.getElementById("servicesSwiper");
-
-if (servicesSwiperEl && window.Swiper) {
-    new Swiper("#servicesSwiper", {
-        slidesPerView: 1,
-        spaceBetween: 18,
-        speed: 700,
-        loop: true,
-        grabCursor: true,
-        watchOverflow: true,
-        autoHeight: false,
-        pagination: {
-            el: ".services-swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".services-swiper-next",
-            prevEl: ".services-swiper-prev",
-        },
-        breakpoints: {
-            768: {
-                slidesPerView: 2,
-            },
-            1200: {
-                slidesPerView: 3,
-            },
-        },
-    });
-}
-

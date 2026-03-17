@@ -506,6 +506,31 @@
             <i data-lucide="phone"></i>
         </a>
     </div>
+        <div class="policy-consent" id="policyConsent" aria-hidden="true">
+            <div class="policy-consent__dialog" role="dialog" aria-labelledby="policyConsentTitle">
+                <div class="policy-consent__content">
+                    <span class="policy-consent__eyebrow">Important Notice</span>
+                    <h2 class="policy-consent__title" id="policyConsentTitle">
+                        Please review our policies before continuing
+                    </h2>
+                    <p class="policy-consent__text">
+                        Please review our Privacy Policy, Terms of Service, and Cookie Policy.
+                        This notice will remain visible until you choose Accept or Decline.
+                    </p>
+        
+                    <div class="policy-consent__links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                        <a href="cookie-policy.html">Cookie Policy</a>
+                    </div>
+                </div>
+        
+                <div class="policy-consent__actions">
+                    <button type="button" class="btn btn--gold" id="policyAcceptButton">Accept</button>
+                    <button type="button" class="btn btn--ghost" id="policyDeclineButton">Decline</button>
+                </div>
+            </div>
+        </div>
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
