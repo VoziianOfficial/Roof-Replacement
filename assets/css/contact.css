@@ -4,7 +4,7 @@
 
 .contact-hero {
     position: relative;
-    padding: 90px 0 60px;
+    overflow: hidden;
 }
 
 .contact-hero::before {
@@ -12,9 +12,15 @@
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(circle at 18% 10%, rgba(198, 166, 106, 0.12), transparent 30%),
-        radial-gradient(circle at 82% 0%, rgba(255, 255, 255, 0.05), transparent 22%);
+        linear-gradient(90deg, rgba(8, 8, 9, 0.86), rgba(8, 8, 9, 0.62)),
+        url("../images/contact/hero-main.jpg") center/cover no-repeat;
+    z-index: 0;
     pointer-events: none;
+}
+
+.contact-hero>* {
+    position: relative;
+    z-index: 1;
 }
 
 .contact-hero__grid {
@@ -404,16 +410,24 @@
 }
 
 .contact-cta {
-    padding: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-    transition:
-        transform var(--transition),
-        border-color var(--transition),
-        background var(--transition),
-        box-shadow var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-cta::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(8, 8, 9, 0.88), rgba(8, 8, 9, 0.64)),
+        url("../images/contact/reviews-bg.jpg") center/cover no-repeat;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.contact-cta>* {
+    position: relative;
+    z-index: 1;
 }
 
 .contact-cta:hover {

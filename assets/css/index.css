@@ -307,19 +307,27 @@
    REVIEWS
 ========================= */
 
-.reviews-slider {
-    padding-bottom: 4px;
+.reviews-slider .swiper-wrapper {
+    align-items: stretch;
+}
+
+.reviews-slider .swiper-slide {
+    height: auto;
+    display: flex;
 }
 
 .review-card {
-    position: relative;
-    overflow: hidden;
-    min-height: 250px;
-    transition:
-        transform var(--transition),
-        border-color var(--transition),
-        background var(--transition),
-        box-shadow var(--transition);
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-card p {
+    flex-grow: 1;
+}
+.reviews-slider {
+    padding-bottom: 4px;
 }
 
 .review-card::before {
