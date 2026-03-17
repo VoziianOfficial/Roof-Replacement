@@ -241,6 +241,30 @@ ul {
     width: 100%;
 }
 
+.btn--ghost.btn--sm {
+    text-align: center;
+    justify-content: center;
+}
+
+.service-cta__actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.service-cta__actions .btn {
+    flex: 1;
+    min-width: 180px;
+    justify-content: center;
+}
+
+@media (max-width: 640px) {
+    .service-cta__actions .btn {
+        min-width: 100%;
+    }
+}
+
 .text-link {
     display: inline-flex;
     align-items: center;
