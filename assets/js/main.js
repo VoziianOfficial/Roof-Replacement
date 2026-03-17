@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (searchToggle && searchPanel) {
         searchToggle.setAttribute("aria-expanded", "false");
 
-        searchToggle.addEventListener("click", () => {
+        searchToggle.addEventListener("click", (event) => {
+            event.stopPropagation();
             const isOpen = searchPanel.classList.contains("is-open");
-
             if (isOpen) {
                 closeSearchPanel();
             } else {
@@ -53,18 +53,21 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!mobileMenu || !burgerButton) return;
         mobileMenu.classList.add("is-open");
         burgerButton.setAttribute("aria-expanded", "true");
-        body.style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
     };
 
     const closeMobileMenu = () => {
         if (!mobileMenu || !burgerButton) return;
         mobileMenu.classList.remove("is-open");
         burgerButton.setAttribute("aria-expanded", "false");
-        body.style.overflow = "";
+        document.body.style.overflow = "";
     };
 
     if (burgerButton) {
-        burgerButton.addEventListener("click", openMobileMenu);
+        burgerButton.addEventListener("click", (event) => {
+            event.stopPropagation();
+            openMobileMenu();
+        });
     }
 
     if (mobileMenuClose) {
@@ -89,20 +92,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.addEventListener("click", (event) => {
-        if (!searchPanel || !searchToggle) return;
+        if (searchPanel && searchToggle) {
+            const clickedInsideSearch =
+                searchPanel.contains(event.target) || searchToggle.contains(event.target);
 
-        const clickedInsideSearch =
-            searchPanel.contains(event.target) || searchToggle.contains(event.target);
-
-        if (!clickedInsideSearch) {
-            closeSearchPanel();
+            if (!clickedInsideSearch) {
+                closeSearchPanel();
+            }
         }
     });
 
     if (faqItems.length) {
         faqItems.forEach((item) => {
             const question = item.querySelector(".faq-question");
-
             if (!question) return;
 
             question.addEventListener("click", () => {
