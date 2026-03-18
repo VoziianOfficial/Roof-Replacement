@@ -167,11 +167,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const servicesSwiperEl = document.getElementById("servicesSwiper");
 
     if (servicesSwiperEl && window.Swiper) {
-        new Swiper("#servicesSwiper", {
+        const servicesSwiper = new Swiper("#servicesSwiper", {
             slidesPerView: 1,
             spaceBetween: 18,
             speed: 700,
-            loop: false,
+            loop: true,
             grabCursor: true,
             watchOverflow: true,
             autoHeight: false,
@@ -191,6 +191,19 @@ document.addEventListener("DOMContentLoaded", () => {
                     slidesPerView: 3,
                 },
             },
+        });
+
+        const serviceCards = document.querySelectorAll(".services-page-card");
+        serviceCards.forEach((card) => {
+            card.addEventListener("click", (event) => {
+                if (event.target.closest("a")) {
+                    return;
+                }
+                const link = card.querySelector(".text-link");
+                if (link) {
+                    window.location.href = link.href;
+                }
+            });
         });
     }
 
