@@ -557,7 +557,6 @@ ul {
     gap: 10px;
 }
 
-/* MOBILE MENU */
 
 .mobile-menu {
     position: fixed;
@@ -1595,9 +1594,7 @@ ul {
     }
 }
 
-/* =========================
-   POLICY CONSENT BAR
-========================= */
+
 
 .policy-consent {
     position: fixed;
@@ -1741,7 +1738,6 @@ ul {
     }
 }
 
-/* MOBILE SEARCH PANEL FIX */
 @media (max-width: 768px) {
     .search-panel.is-open {
         max-height: min(78vh, 520px);

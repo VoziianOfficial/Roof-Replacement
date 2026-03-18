@@ -1,6 +1,4 @@
-/* =========================
-   SERVICES PAGE STYLES
-========================= */
+
 
 .services-hero {
     position: relative;
@@ -111,9 +109,6 @@
     flex-shrink: 0;
 }
 
-/* =========================
-   SERVICES SWIPER
-========================= */
 
 .services-swiper {
     width: 100%;
@@ -198,9 +193,7 @@
     height: 18px;
 }
 
-/* =========================
-   SERVICES PAGE CARD
-========================= */
+
 
 .services-page-card {
     position: relative;
@@ -307,9 +300,7 @@
 .services-page-card .text-link {
     margin-top: auto;
 }
-/* =========================
-   BENEFITS
-========================= */
+
 
 .service-benefits-grid {
     display: grid;
@@ -370,9 +361,7 @@
     color: var(--text-soft);
 }
 
-/* =========================
-   PROCESS
-========================= */
+
 
 .services-process-grid {
     display: grid;
@@ -410,9 +399,7 @@
     color: var(--text-soft);
 }
 
-/* =========================
-   TRUST
-========================= */
+
 
 .services-trust {
     padding: 32px;
@@ -473,9 +460,7 @@
     flex-shrink: 0;
 }
 
-/* =========================
-   CTA
-========================= */
+
 
 .services-cta {
     position: relative;
@@ -528,9 +513,7 @@
     flex-wrap: wrap;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 @media (max-width: 1200px) {
 
     .service-benefits-grid,
